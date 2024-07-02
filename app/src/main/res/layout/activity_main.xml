@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbcl"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/redcolor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/red_bck" />
+
+        <ImageButton
+            android:id="@+id/yellowcolor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/yellow_bck"/>
+
+        <ImageButton
+            android:id="@+id/orangecolor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/orange_bck"/>
+
+        <ImageButton
+            android:id="@+id/eraser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/eraser"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/paint_view"/>
+    </RelativeLayout>
+</RelativeLayout>
